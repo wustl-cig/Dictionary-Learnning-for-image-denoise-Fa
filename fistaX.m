@@ -14,7 +14,7 @@ fprintf("fistaX");
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     
     
-    xhat0 = zeros(a,b); % initial value
+    xhat0 = X; % initial value
     gamma = 1; % step-size
     numIter = 15;
     beta = 0.5;
