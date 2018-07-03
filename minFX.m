@@ -64,7 +64,7 @@ for i=1:20
     drawKernels(Dictionary);
     axis equal off tight;
     colormap gray;
-    title('kernels');
+    title('Dictionary');
     set(gca, 'FontSize', 18);
     
     subplot(3, 4, 3);
@@ -82,43 +82,45 @@ for i=1:20
     set(gca, 'FontSize', 18);
     
     subplot(3, 4, 7:8);
-    title(sprintf('psnr'));
+   
     semilogy(1:i, aPsnr(1:i), 'b-', 'LineWidth', 1.5);
     xlim([1 20]);
     grid on;
+    title('psnr');
+    set(gca, 'FontSize', 15);
    
     
     subplot(3, 4, 9);
-    title(sprintf('||X-Y||^2'));
+%     title(sprintf('||X-Y||^2'));
     semilogy(1:i, dcost(1:i), 'b-', 'LineWidth', 1.5);
     xlim([1 20]);
     grid on;
-%     title(['\color{blue}' sprintf('cost: %.1e dB', dcost(indIter))]);
-    set(gca, 'FontSize', 18);
+    title('||X-Y||^2');
+    set(gca, 'FontSize', 12);
     
     subplot(3, 4, 10);
-    title(sprintf("||RX-Dalpha||"));
+%     title(sprintf("||RX-Dalpha||"));
     semilogy(1:i, ccost(1:i), 'c-', 'LineWidth', 1.5);
     xlim([1 20]);
     grid on;
-%     title(['\color{cyan}' sprintf('data-fit: %.1e dB', ccost(indIter))]);
-    set(gca, 'FontSize', 18);
+     title('||RX-Dalpha||^2_2');
+    set(gca, 'FontSize', 12);
     
     subplot(3, 4, 11);
-    title(sprintf('|alpha|_1'));
+%     title(sprintf('|alpha|_1'));
     semilogy(1:i, rcost(1:i), 'm-', 'LineWidth', 1.5);
     xlim([1 20]);
     grid on;
-%     title(['\color{magenta}' sprintf('constraint: %.1e dB', rcost(indIter))]);
-    set(gca, 'FontSize', 18);
+     title('|alpha|_1');
+    set(gca, 'FontSize', 12);
     
      subplot(3, 4, 12);
-    title(sprintf('allcost'));
+%     title(sprintf('allcost'));
     semilogy(1:i, allcost(1:i), 'm-', 'LineWidth', 1.5);
     xlim([1 20]);
     grid on;
-%     title(['\color{magenta}' sprintf('constraint: %.1e dB', rcost(indIter))]);
-    set(gca, 'FontSize', 18);
+     title('allcost');
+    set(gca, 'FontSize', 12);
     
 
     
