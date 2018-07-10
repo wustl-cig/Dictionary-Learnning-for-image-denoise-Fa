@@ -21,6 +21,7 @@ To run the code, just simply run minFX.m.
 
 ## result is showing as below:
 ![image](https://raw.githubusercontent.com/wustl-cig/Dictionary-Learnning-for-image-denoise-Fa/master/result.png?token=AVLS5GbWvg35C2cso9BSnYjnf3A3VCpZks5bTk6vwA%3D%3D)
+highest PSNR: 26.99
 
 author: Fa Long
        2018.7
