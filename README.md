@@ -4,8 +4,8 @@
 
 These code implements a dictionary learnning algorithm which can be used for image denoising.
 
-the code trying to optimize the following cequation:
-![image](https://raw.githubusercontent.com/wustl-cig/Dictionary-Learnning-for-image-denoise-Fa/master/image.png?token=AVLS5OV0AvUUP8npJdomVR4sKLlf3KjYks5bTkh6wA%3D%3D)
+the code trying to optimize the following equation:
+![image](https://github.com/wustl-cig/Dictionary-Learnning-for-image-denoise-Fa/blob/master/image.png)
 with rho = 0.05 and rau = 0.001.
 
 please use it on MatLab.
@@ -20,9 +20,12 @@ To run the code, just simply run minFX.m.
 
 
 ## result is showing as below:
-![image](https://raw.githubusercontent.com/wustl-cig/Dictionary-Learnning-for-image-denoise-Fa/master/result.png?token=AVLS5GbWvg35C2cso9BSnYjnf3A3VCpZks5bTk6vwA%3D%3D)
+![image](https://github.com/wustl-cig/Dictionary-Learnning-for-image-denoise-Fa/blob/master/result.png)
 highest PSNR: 26.99
 
+
+update: denoise by encode gradient info of the image, run MinGFX.m to see the result.
 author: Fa Long
        2018.7
+     
 
